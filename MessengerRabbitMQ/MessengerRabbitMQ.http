@@ -1,0 +1,6 @@
+@MessengerRabbitMQ_HostAddress = http://localhost:5091
+
+GET {{MessengerRabbitMQ_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
