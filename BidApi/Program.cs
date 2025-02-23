@@ -1,4 +1,5 @@
 using Application.Interface.Repository;
+using Common.Middlewares;
 using Data.Context;
 using Infrastructure.Repository;
 using Microsoft.EntityFrameworkCore;
@@ -16,6 +17,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IBidRepository, BidRepository>();
+builder.Services.AddProblemDetails();
+//builder.Services.AddExceptionHandler<ValidationExceptionHandler>();
 
 var connStr = builder.Configuration.GetConnectionString("ConnStr");
 
@@ -33,6 +36,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseMiddleware<GlobalExceptionHandler>();
+
+app.UseExceptionHandler();
 
 app.UseAuthorization();
 

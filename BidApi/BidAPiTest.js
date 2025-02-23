@@ -2,7 +2,7 @@ import http from 'k6/http';
 import { sleep } from 'k6';
 
 export const options = {
-    vus: 300,
+    vus: 10,
     duration: '10s',
     cloud: {
         // Project: BidAPITest
@@ -19,11 +19,13 @@ export const options = {
 
 export default function () {
 
-    http.get('https://localhost:7255/api/User/userlist');
+    http.get('https://localhost:7140/api/Bid');
+    http.get('https://localhost:7140/api/User');
 
-
-
-
+    http.post('https://localhost:7140/api/Bid');
+    http.post('https://localhost:7140/api/User');
+    http.put('https://localhost:7140/api/User');
+    http.del('https://localhost:7140/api/User');
     
     sleep(1);
 }

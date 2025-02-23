@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{43C46D7C-06B1-4353-9C18-0FB3CB67EDA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{43C46D7C-06B1-4353-9C18-0FB3CB67EDA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{F47D82DA-DC20-467B-BEA3-9B59A69B81CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{F47D82DA-DC20-467B-BEA3-9B59A69B81CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{A114E191-77B6-421C-A03B-769665FC7B57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{A114E191-77B6-421C-A03B-769665FC7B57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{E4751453-35FD-4913-982A-0FC8E5E4E616}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{E4751453-35FD-4913-982A-0FC8E5E4E616}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BidApi", "BidApi\BidApi.csproj", "{0C3808FC-7E61-48CF-BACF-33FA2390E9AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BidApi", "BidApi\BidApi.csproj", "{0C3808FC-7E61-48CF-BACF-33FA2390E9AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessengerRabbitMQ", "MessengerRabbitMQ\MessengerRabbitMQ.csproj", "{2B190B7F-9637-49D6-A8C9-2C9C32B6E1B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessengerRabbitMQ", "MessengerRabbitMQ\MessengerRabbitMQ.csproj", "{2B190B7F-9637-49D6-A8C9-2C9C32B6E1B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{1909C293-4699-421F-BFA3-69B5B690C960}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{2B190B7F-9637-49D6-A8C9-2C9C32B6E1B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B190B7F-9637-49D6-A8C9-2C9C32B6E1B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B190B7F-9637-49D6-A8C9-2C9C32B6E1B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1909C293-4699-421F-BFA3-69B5B690C960}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1909C293-4699-421F-BFA3-69B5B690C960}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1909C293-4699-421F-BFA3-69B5B690C960}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1909C293-4699-421F-BFA3-69B5B690C960}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

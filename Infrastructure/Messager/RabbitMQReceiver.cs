@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Channels;
-using System.Threading.Tasks;
-
-namespace Infrastructure.Messager
+﻿namespace Infrastructure.Messager
 {
     public class RabbitMQReceiver
     {
@@ -25,5 +18,5 @@ namespace Infrastructure.Messager
             //// when it has to be cancelled
             //string consumerTag = await channel.BasicConsumeAsync(queueName, false, consumer);
         }
-}
+    }
 }
