@@ -20,16 +20,10 @@ Microservices;
 
 K6 Resultaten:
 
-Test Case 1
-Kijkers: 210
-Duur: 100s
-mislukt:0%
-
-         /\      Grafana   /‾‾/
-    /\  /  \     |\  __   /  /
-   /  \/    \    | |/ /  /   ‾‾\
-  /          \   |   (  |  (‾)  |
- / __________ \  |_|\_\  \_____/
+Test Case 1:
+- Kijkers: 210
+- Duur: 100s
+- mislukt:0%
 
      execution: local
         script: .\BidPostAPILoadingTest.js
@@ -60,16 +54,10 @@ mislukt:0%
 running (1m41.8s), 000/210 VUs, 13178 complete and 0 interrupted iterations
 default ✓ [======================================] 210 VUs  1m40s
 
-Test Case 2
-Kijkers: 250
-Duur: 100s
-mislukt:0.32%
-
-         /\      Grafana   /‾‾/
-    /\  /  \     |\  __   /  /
-   /  \/    \    | |/ /  /   ‾‾\
-  /          \   |   (  |  (‾)  |
- / __________ \  |_|\_\  \_____/
+Test Case 2:
+- Kijkers: 250
+- Duur: 100s
+- mislukt:0.32%
 
      execution: local
         script: .\BidPostAPILoadingTest.js
