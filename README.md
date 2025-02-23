@@ -25,9 +25,6 @@ Test Case 1:
 - Duur: 100s
 - mislukt:0%
 
-     execution: local
-        script: .\BidPostAPILoadingTest.js
-        output: -
 
   ![image](https://github.com/user-attachments/assets/d7e56c72-afc6-43ea-9c4d-1b1f1f62904c)
 
