@@ -9,9 +9,12 @@ namespace Application.Interface.Repository
 {
     public interface IUserRepository
     {
-        public Task<User> New(User user);
+        public Task<User> NewAsync(User user);
+        public User New(User user);
         public Task<User> Update(User user);
         public Task Delete(User user);
-        public Task<IEnumerable<User>> GetAll();
+        public Task<IEnumerable<User>> GetAllAsync();
+        public IEnumerable<User> GetAll();
+
     }
 }

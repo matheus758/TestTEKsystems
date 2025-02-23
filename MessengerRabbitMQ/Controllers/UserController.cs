@@ -28,7 +28,14 @@ namespace MessengerRabbitMQ.Controllers
             var users = _userService.GetAll();
             return Ok(users);
         }
-       
+
+        [HttpGet("userlistAsync")]
+        public async Task<ActionResult<IEnumerable<User>>> GetProductsAsync()
+        {
+            var users = await _userService.GetAllAsync();
+            return Ok(users);
+        }
+
         [HttpPost("adduser")]
         public IActionResult Add([FromBody] User user)
         {

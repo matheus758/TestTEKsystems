@@ -20,16 +20,28 @@ namespace Infrastructure.Repository
             await sqlDbContext.SaveChangesAsync();
         }
 
-        public async Task<IEnumerable<User>> GetAll()
+        public async Task<IEnumerable<User>> GetAllAsync()
         {
             var result = await sqlDbContext.User.ToListAsync();
             return result;
         }
 
-        public async Task<User> New(User user)
+        public IEnumerable<User> GetAll()
+        {
+            var result =  sqlDbContext.User.ToList();
+            return result;
+        }
+
+        public async Task<User> NewAsync(User user)
         {
            var result = sqlDbContext.User.Add(user);
             await sqlDbContext.SaveChangesAsync();
+            return result.Entity;
+        }
+
+        public User New(User user)
+        {
+            var result = sqlDbContext.User.Add(user);
             return result.Entity;
         }
 

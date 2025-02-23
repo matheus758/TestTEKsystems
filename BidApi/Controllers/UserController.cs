@@ -18,7 +18,7 @@ namespace BidApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetAll()
         {
-            var result = await userRepository.GetAll();
+            var result = await userRepository.GetAllAsync();
             return Ok(result);
         }
         [HttpPut]
@@ -35,9 +35,9 @@ namespace BidApi.Controllers
             return Ok();
         }
         [HttpPost]
-        public async Task<ActionResult<User>> New(User user)
+        public async Task<ActionResult<User>> NewAsync(User user)
         {
-            await userRepository.New(user);
+            await userRepository.NewAsync(user);
             return Ok(user);
         }
     }
