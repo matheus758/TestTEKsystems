@@ -50,6 +50,7 @@ Test Case 1:
      vus............................: 185    min=185        max=210
      vus_max........................: 210    min=210        max=210
 
+![image](https://github.com/user-attachments/assets/57a675dc-05bf-4bb9-aae8-090f898b71b0)
 
 running (1m41.8s), 000/210 VUs, 13178 complete and 0 interrupted iterations
 default ✓ [======================================] 210 VUs  1m40s
@@ -58,6 +59,8 @@ Test Case 2:
 - Kijkers: 250
 - Duur: 100s
 - mislukt:0.32%
+
+![image](https://github.com/user-attachments/assets/7f7e6060-5da4-4565-90b7-d1fcb541b1c0)
 
      execution: local
         script: .\BidPostAPILoadingTest.js
